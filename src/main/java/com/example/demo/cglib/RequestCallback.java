@@ -11,7 +11,6 @@ import org.springframework.cglib.proxy.MethodProxy;
  */
 public class RequestCallback  implements MethodInterceptor {
 
-	@Override
 	public Object intercept(Object object, Method method, Object[] args, MethodProxy proxy) throws Throwable {
 		if(method.getName().equals("request")) {
 			System.out.println("你调用了request方法");

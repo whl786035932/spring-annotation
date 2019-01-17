@@ -12,25 +12,21 @@ public class SystemLogServiceImpl implements SystemLogService {
 	
 	private final Logger logger = LoggerFactory.getLogger(SystemLogServiceImpl.class);
 	
-	@Override
 	public int deleteSystemLog(String id) {
 		logger.info("deleteSystemLog===>>>" + id);
 		return 1;
 	}
  
-	@Override
 	public int insert(SystemLog record) {
 		logger.info("insert===>>>" + record.toString());
 		return 1;
 	}
  
-	@Override
 	public int insertTest(SystemLog record) {
 		logger.info("insertTest===>>>" + record.toString());
 		return 1;
 	}
  
-	@Override
 	public SystemLog selectSystemLog(String id) {
 		logger.info("selectSystemLog===>>>" + id);
 	    SystemLog log = new SystemLog();  
@@ -47,7 +43,6 @@ public class SystemLogServiceImpl implements SystemLogService {
 		return log;
 	}
  
-	@Override
 	public int updateSystemLog(SystemLog record) {
 		logger.info("updateSystemLog===>>>" + record.toString());
 		return 1;

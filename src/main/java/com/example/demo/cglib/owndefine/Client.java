@@ -20,7 +20,6 @@ public class Client {
 		//advice定义，这个是横切逻辑的定义，这里是方法执行前的横切逻辑---前置通知
 		MethodBeforeAdvice advice = new MethodBeforeAdvice() {
 			
-			@Override
 			public void before(Method method, Object[] args, Object target) throws Throwable {
 				System.out.println("waitting for you ");
 				System.out.println(target.getClass().getSimpleName()+";"+method.getName());

@@ -6,7 +6,6 @@ import com.example.demo.cglib.RequestTable;
 
 public class MyClassFilter implements ClassFilter{
 
-	@Override
 	public boolean matches(Class<?> clazz) {
 		
 		//只给RequestTable做切面逻辑

@@ -15,7 +15,6 @@ public class TestAOPServiceImpl implements TestAOPService{
 	@Autowired
 	private TestAopDaoImpl testAopDao;
 	
-	@Override
 	public void addUser() {
 		testAopDao.adddUser();
 	}
