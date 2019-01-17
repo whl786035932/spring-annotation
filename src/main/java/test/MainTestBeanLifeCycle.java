@@ -1,4 +1,4 @@
-package com.example.demo.test;
+package test;
 
 import java.util.HashMap;
 import java.util.HashSet;

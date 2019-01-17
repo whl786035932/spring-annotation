@@ -1,4 +1,4 @@
-package com.example.demo.test;
+package test;
 
 import org.junit.Test;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
