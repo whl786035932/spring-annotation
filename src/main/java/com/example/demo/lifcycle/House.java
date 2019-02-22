@@ -9,9 +9,16 @@ import javax.annotation.PreDestroy;
  *
  */
 public class House {
-
+	
+	private  String address;
+	
 	public House() {
 		System.out.println("House   constructor----------");
+	}
+	
+	public House(String address) {
+		System.out.println(" House  有参构造方法------------------------------");
+		this.address = address;
 	}
 	
 	@PostConstruct
@@ -22,4 +29,17 @@ public class House {
 	public void destroy() {
 		System.out.println("House  destroy-----------");
 	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		System.out.println("房子确定地址了%%%%%%%%%%%%%%%%%%%");
+		this.address = address;
+	}
+	
+	
+	
+	
 }

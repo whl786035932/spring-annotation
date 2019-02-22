@@ -17,10 +17,9 @@ public class VolatileTest {
 	public static void main(String[] args) {
 		for(int i=0;i<10000;i++) {
 			
-			VolatileTest test = new VolatileTest();
+			final VolatileTest test = new VolatileTest();
 			new Thread(new Runnable() {
 				
-				@Override
 				public void run() {
 					try {
 						Thread.sleep(10);
@@ -35,7 +34,6 @@ public class VolatileTest {
 			
 			new Thread(new Runnable() {
 				
-				@Override
 				public void run() {
 					try {
 						Thread.sleep(10);

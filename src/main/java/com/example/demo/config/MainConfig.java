@@ -1,11 +1,10 @@
 package com.example.demo.config;
 
-import java.awt.Color;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 
 import com.example.demo.bean.Person;
@@ -39,13 +38,13 @@ public class MainConfig {
 	 * @Lazy是针对单实例的对象，只有再getBean（）才会去创建对象
 	 * @return
 	 */
-//	@Lazy
-//	@Bean(name="person_anno")
-//	@Scope(value="singleton")
-//	public Person person1() {
-//		Person person = new Person("王海丽_注解",18);
-//		return person;
-//	}
+	@Lazy
+	@Bean(name="person_anno")
+	@Scope(value="singleton")
+	public Person person1() {
+		Person person = new Person("王海丽_注解",18);
+		return person;
+	}
 	
 	@Bean
 	@Conditional(value=WindowCondition.class)

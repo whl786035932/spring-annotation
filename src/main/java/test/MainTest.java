@@ -38,13 +38,13 @@ public class MainTest {
 		
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig.class);
 		Person person = (Person) applicationContext.getBean("person_anno");
-//		System.out.println("person.anme="+person.getName());
-//		System.out.println("person.age="+person.getAge());
+		System.out.println("person.anme="+person.getName());
+		System.out.println("person.age="+person.getAge());
 //		
 //		Person person2 = (Person) applicationContext.getBean("person_anno");
 //		System.out.println(person==person2);
 //		
-//		
+////		
 //		Student stu = (Student) applicationContext.getBean("student_anno");
 //		Student stu2 = (Student) applicationContext.getBean("student_anno");
 //		System.out.println(stu==stu2);
@@ -85,7 +85,9 @@ public class MainTest {
 		System.out.println(bean);
 	}
 	
-	
+	/**
+	 * 测试自定义的FactoryBean, 将FactoryBean注册到IOC容器中，那FactoryBean返回的Object 就会自动注册到IOC容器中
+	 */
 	@Test
 	public void testColorFactoryBean() {
 		Color bean = applicationContext.getBean(Color.class);

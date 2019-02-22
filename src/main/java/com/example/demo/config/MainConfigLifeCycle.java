@@ -24,7 +24,10 @@ public class MainConfigLifeCycle {
 	
 	@Bean
 	public House house() {
-		return new House();
+		House house = new House("天通苑");
+		house.setAddress("天通西苑");
+		return  house;
+		
 	}
 	
 	@Bean

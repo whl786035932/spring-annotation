@@ -24,7 +24,6 @@ public class TestSpinLock implements Runnable {
 		
 		
 	}
-	@Override
 	public void run() {
 		this.lock.lock();
 		this.lock.lock();

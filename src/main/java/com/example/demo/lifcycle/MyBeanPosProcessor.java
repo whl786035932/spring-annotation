@@ -11,7 +11,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
  */
 public class MyBeanPosProcessor  implements BeanPostProcessor{
 	/**
-	 * 在待用构造方法之后，属性赋值之气那执行
+	 * 在待用构造方法之后，属性赋值之前那执行
 	 */
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 		System.out.println("postProcessBeforeInitialization---"+beanName+"---->"+bean);
